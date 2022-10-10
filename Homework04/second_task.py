@@ -1,2 +1,19 @@
 # Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N.
-# Пример: N = 20 => [2, 2, 5]
+
+def number_factorization(N):
+    factors = []
+    divider = 2
+
+    while divider <= N:
+        if not N % divider:
+            factors.append(divider)
+            N /= divider
+        else:
+            divider += 1
+    print('Результат: ', factors)
+
+
+if __name__ == '__main__':
+    N = int(input("Введите число: \n"))
+    # print ('Результат: ', number_factorization(N))
+    number_factorization(N)

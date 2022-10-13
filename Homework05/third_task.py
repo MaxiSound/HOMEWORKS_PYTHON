@@ -125,3 +125,5 @@ while game_over == False:
 
 print_maps()
 print("Победитель", win)
+
+# Победить невозможно, максимум ничья! ;-)
